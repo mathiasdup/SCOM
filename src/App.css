@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+:root {
+  background: #f5f6fa;
+  color: #9c9c9c;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100vw;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: auto 47% 47% auto;
+  grid-template-rows: 7vh 86vh auto;
+}
+
+.background-task,
+.background-workforce {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  height: 86vh;
+}
+
+.background-workforce {
+  background-color: #74b9ff;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  border: 2px dashed white;
+}
+
+.background-task {
+  background-color: #a29bfe;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  border-right: 2px dashed white;
+  border-bottom: 2px dashed white;
+  border-top: 2px dashed white;
+}
+
+.workforce,
+.task {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 26px;
+  color: black;
+}
+
+.workforce {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.task {
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+}
+
+.container-src,
+.container-target {
+  max-width: 100vw;
+  height: 86vh;
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+
+.container-src {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.container-target {
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  z-index: 9999;
+  cursor: pointer;
+  color: #fff;
+  background: #f01313;
+  padding: 5px 30px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  width: 180px;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  border: 3px solid transparent;
+  outline: 0;
+  padding: 13px 10px;
+  margin: 16px 10px;
+  cursor: pointer;
+}
+
+.input-src.one {
+  border-left: 3px solid yellow;
+}
+
+.input-src.two {
+  border-left: 3px solid red;
+}
+
+.input-src.three {
+  border-left: 3px solid purple;
+}
+
+.input-src.four {
+  border-left: 3px solid green;
+}
+
+.input-target.one {
+  border-right: 3px solid blue;
+}
+
+.input-target.two {
+  border-right: 3px solid orchid;
+}
+
+.input-target.three {
+  border-right: 3px solid orange;
+}
+
+.input-target.four {
+  border-right: 3px solid maroon;
+}
+
+.form-field:focus.input-src.one {
+  border: 3px dashed yellow;
+}
+
+.form-field:focus.input-src.two {
+  border: 3px dashed red;
+}
+
+.form-field:focus.input-src.three {
+  border: 3px dashed purple;
+}
+
+.form-field:focus.input-src.four {
+  border: 3px dashed green;
+}
+
+.form-field:focus.input-target.one {
+  border: 3px dashed blue;
+}
+
+.form-field:focus.input-target.two {
+  border: 3px dashed orchid;
+}
+
+.form-field:focus.input-target.three {
+  border: 3px dashed orange;
+}
+
+.form-field:focus.input-target.four {
+  border: 3px dashed maroon;
+}
+
+.dot-src,
+.dot-target {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.dot-src.one {
+  background-color: yellow;
+}
+
+.dot-src.two {
+  background-color: red;
+}
+
+.dot-src.three {
+  background-color: purple;
+}
+
+.dot-src.four {
+  background-color: green;
+}
+
+.dot-target.one {
+  background-color: blue;
+}
+
+.dot-target.two {
+  background-color: orchid;
+}
+
+.dot-target.three {
+  background-color: orange;
+}
+
+.dot-target.four {
+  background-color: maroon;
+}
+
+#svgzone {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 1000px;
+}
+
+#svgdraw {
+  width: 100%;
+  height: 100%;
+}
