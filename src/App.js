@@ -78,7 +78,7 @@ class App extends React.Component {
         let sourcex = rect.x + rect.width/2 + window.pageXOffset
         let sourcey = rect.y + rect.height/2 + window.pageYOffset;
         
-      if (dotpairs[i]["direction"] == "target")
+      if (dotpairs[i]["direction"] === "target")
         html += "<line x1='"+sourcex+"' y1='"+sourcey+"' x2='"+targetx+"' y2='"+targety+"' style='stroke:rgb(0,0,0);stroke-width:2' marker-end='url(#arrow_black)'/>";
           else
         html += "<line x1='"+targetx+"' y1='"+targety+"' x2='"+sourcex+"' y2='"+sourcey+"' style='stroke:rgb(0,0,0);stroke-width:2' marker-end='url(#arrow_black2)'/>";			    
