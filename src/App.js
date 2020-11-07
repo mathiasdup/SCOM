@@ -161,7 +161,7 @@ class App extends React.Component {
             <div id="svgzone">
 			        <svg id="svgdraw"></svg>
 		        </div>
-            <div className="workforce">ÉQUIPE DE NETTOYAGE</div>
+            <div className="workforce">EMPLOYÉS</div>
             <div className="task">TÂCHES</div>
             <div className="background-workforce"></div>
             <div className="background-task"></div>
